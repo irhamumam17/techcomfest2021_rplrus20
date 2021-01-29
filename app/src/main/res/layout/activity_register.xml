@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/color_white"
+    tools:context=".UI.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvRegistrasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/regular"
+            android:text="Buat Akun Anda"
+            android:textColor="@color/color_black"
+            android:textSize="27sp"/>
+
+        <TextView
+            android:id="@+id/tvRegistrasi2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvRegistrasi"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/regular"
+            android:text="silahkan buat akun anda untuk melanjutkan."
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/txt_username_register"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/tvRegistrasi2"
+            android:layout_marginTop="50dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/input_field_circle"
+            android:fontFamily="@font/regular"
+            android:inputType="text"
+            android:hint="Username"
+            android:textColor="@color/color_black"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/txt_name_register"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/txt_username_register"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/input_field_circle"
+            android:fontFamily="@font/regular"
+            android:inputType="text"
+            android:hint="Nama Lengkap"
+            android:textColor="@color/color_black"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/txt_password_register"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/txt_name_register"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/input_field_circle"
+            android:fontFamily="@font/regular"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/color_black"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/txt_email_register"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/txt_password_register"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/input_field_circle"
+            android:fontFamily="@font/regular"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:textColor="@color/color_black"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/txt_phone_register"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/txt_email_register"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/input_field_circle"
+            android:fontFamily="@font/regular"
+            android:hint="No. Telp"
+            android:inputType="phone"
+            android:textColor="@color/color_black"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/txt_address_register"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/txt_phone_register"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/input_field_circle"
+            android:fontFamily="@font/regular"
+            android:hint="Alamat Tempat Tinggal"
+            android:inputType="text"
+            android:textColor="@color/color_black"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/txt_forgot_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_address_register"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/regular"
+            android:text="Lupa Password?"
+            android:textColor="@color/color_black"
+            android:textSize="13sp"/>
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/txt_forgot_register"
+            android:layout_marginTop="50dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/btn_custom"
+            android:fontFamily="@font/regular"
+            android:text="DAFTAR"
+            android:textSize="18sp"
+            android:textColor="@color/color_white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/btnRegister"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:text="Sudah punya akun? "
+                android:textColor="@color/color_black"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tvLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:text=" MASUK"
+                android:textColor="@color/color_black"
+                android:textSize="17sp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

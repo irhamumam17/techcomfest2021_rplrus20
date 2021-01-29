@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    tools:context=".UI.InputDonasiJasaActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarInput_DJasa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"/>
+
+    <TextView
+        android:id="@+id/txt_CV"
+        android:layout_below="@+id/toolbarInput_DJasa"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:text="Curiculum vitae"
+        android:textStyle="bold"
+        android:textColor="@color/color_black"
+        android:textSize="15sp"/>
+
+    <ImageView
+        android:id="@+id/img_CV"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/ic_baseline_image"
+        android:layout_below="@id/txt_CV"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/txt_porto"
+        android:layout_below="@id/img_CV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Portofolio"
+        android:textColor="@color/color_black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/img_porto"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/ic_baseline_image"
+        android:layout_below="@id/txt_porto"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/txt_pasfoto"
+        android:layout_below="@id/img_porto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Portofolio"
+        android:textColor="@color/color_black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/img_pasfoto"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/ic_baseline_image"
+        android:layout_below="@id/txt_pasfoto"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btn_input_donasi_jasa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="KIRIM"
+        android:textColor="@color/color_white"/>
+
+</RelativeLayout>

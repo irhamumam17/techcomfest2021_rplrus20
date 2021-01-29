@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "230494810857",
+    "project_id": "donacare-99f89",
+    "storage_bucket": "donacare-99f89.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:230494810857:android:780197060db7b2c5bd3678",
+        "android_client_info": {
+          "package_name": "com.example.donacare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "230494810857-05ja8917l5h8eq8ldbluou530vv5d7ad.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4lXDKaLc3Z3NcGMyjFHN_CSwq1Ft12bU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "230494810857-05ja8917l5h8eq8ldbluou530vv5d7ad.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

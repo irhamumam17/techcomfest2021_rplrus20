@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.donacare">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Donacare">
+        <activity android:name=".UI.DetailInfoKelasActivity"
+            android:parentActivityName=".UI.DetailKelasActivity">
+
+        </activity>
+        <activity
+            android:name=".UI.InputDonasiJasaActivity"
+            android:parentActivityName=".UI.DonasiJasaActivity" />
+        <activity
+            android:name=".UI.DetailKelasActivity"
+            android:parentActivityName=".UI.HomeActivity" />
+        <activity android:name=".UI.InputDonasiDanaActivity" />
+        <activity android:name=".UI.DetailHome" />
+        <activity android:name=".UI.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".UI.InputDonasiBarangActivity"
+            android:parentActivityName=".UI.DonasiJasaActivity" />
+
+        <activity android:name=".UI.HomeActivity"></activity>
+        <activity android:name=".UI.RegisterActivity" />
+        <activity android:name=".UI.LoginActivity" />
+        <activity
+            android:name=".UI.DonasiJasaActivity"
+            android:parentActivityName=".UI.HomeActivity">
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.com.vansuita.pickimage.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/picker_provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.DetailHome"
+    android:background="@color/color_white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/title_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/toolbar_detail"
+        android:text="Organisasi Kudus"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textColor="@color/color_black"/>
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/title_name"
+        android:text="Kudus"
+        android:textSize="14dp"
+        android:textColor="@color/color_black"/>
+
+    <ImageView
+        android:id="@+id/imgDetail"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@+id/title2"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/img_background" />
+
+    <TextView
+        android:id="@+id/tv_deskripsi_berita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgDetail"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="40dp"
+        android:lineSpacingExtra="15dp"
+        android:text="Delapan kecamatan di Kota Manado, Sulawesi Utara (Sulut) direndam banjir, Jumat (22/1/2021) sekitar pukul 12.00 waktu setempat atau 11.00 WIB. Badan Penanggulangan Bencana Daerah (BPBD) Kota Manado melaporkan hujan sebagai salah satu pemicu terjadinya bencana tersebut."
+        android:textColor="@color/color_black"/>
+
+    <Button
+        android:id="@+id/btn_direct_whatsapp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/btn_donasi_sekarang"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Hubungi Admin"
+        android:textColor="@color/color_white"
+        android:drawableLeft="@mipmap/whatsapp"
+        android:background="@color/color_white"/>
+
+    <Button
+        android:id="@+id/btn_donasi_sekarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="DonasI Sekarang"
+        android:textColor="@color/color_white"/>
+
+</RelativeLayout>

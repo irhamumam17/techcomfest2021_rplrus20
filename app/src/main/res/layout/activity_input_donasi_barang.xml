@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/color_white"
+        tools:context=".UI.InputDonasiBarangActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarInput_Barang"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"/>
+
+        <ImageView
+            android:id="@+id/img_Input"
+            android:src="@mipmap/img_background"
+            android:layout_width="355dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_below="@id/toolbarInput_Barang"/>
+
+        <TextView
+            android:id="@+id/txt_Info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_Input"
+            android:text="Korban Longsor Bandung"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/color_black"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/txtKategoriDonasi"
+            android:layout_below="@+id/txt_Info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kategori donasi: "
+            android:textColor="@color/color_black"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spPilihanDonasi"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/spinner_background"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="20dp" />
+            android:background="@drawable/sp_bg"
+            android:layout_marginHorizontal="20dp"
+            android:layout_below="@+id/txtKategoriDonasi"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/txtJenisBarang"
+            android:layout_below="@+id/spPilihanDonasi"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/input_field_retangle"
+            android:fontFamily="@font/regular"
+            android:hint="Jenis Barang"
+            android:inputType="text"
+            android:textColorHint="@color/colorAccent"
+            android:textColor="@color/color_black"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/txtJumlahBarang"
+            android:layout_below="@id/txtJenisBarang"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/input_field_retangle"
+            android:fontFamily="@font/regular"
+            android:hint="Jumlah Barang"
+            app:passwordToggleEnabled="true"
+            android:inputType="textPassword"
+            android:textColor="@color/color_black"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="15sp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/txtBeratBarang"
+            android:layout_below="@+id/txtJumlahBarang"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/input_field_retangle"
+            android:fontFamily="@font/regular"
+            android:hint="Berat Barang"
+            android:inputType="text"
+            android:textColorHint="@color/colorAccent"
+            android:textColor="@color/color_black"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/txtAlamatLengkap"
+            android:layout_below="@+id/txtBeratBarang"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/input_field_retangle"
+            android:fontFamily="@font/regular"
+            android:hint="Alamat Lengkap"
+            android:inputType="textPassword"
+            android:textColor="@color/color_black"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="15sp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/btn_inputFoto_inputDonasi"
+            android:layout_below="@+id/txtAlamatLengkap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_background_retangle"
+            android:text="Foto Barang"
+            android:textColor="@color/color_white" />
+
+        <Button
+            android:id="@+id/btnKirim"
+            android:layout_below="@+id/btn_inputFoto_inputDonasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/btn_background_retangle"
+            android:layout_marginBottom="30dp"
+            android:text="Kirim"
+            android:textColor="@color/color_white" />
+
+    </RelativeLayout>
+</ScrollView>
